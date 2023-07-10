@@ -1,38 +1,23 @@
-#Projeto Lista de Compras - Utilizado no Curso Objetos no JavaScript - Escola Front-End Alura
+![nome](https://github.com/anagiulias/Mochila_de_viagem/assets/115855530/9c689d1d-ebb5-4f0a-a591-f1ba166bdcf8)
 
-Neste arquivo encontram-se modelos de códigos que serão utilizados no decorrer do curso. 
+# <h1 align="center"> ⚇ Objetos no JS - Lista de Compas ⚇ </h1>
 
-Código modelo da li "Comprados":
+![Badge Finalizado](https://img.shields.io/badge/STATUS-FINALIZADO-<BRIGHTGREEN)
 
-    <li class="item-compra is-flex is-justify-content-space-between" data-value="">
-        <div>
-            <input type="checkbox" checked class="is-clickable" />  
-            <span class="itens-comprados is-size-5"></span>
-        </div>
-        <div>
-            <i class="fa-solid fa-trash is-clickable deletar"></i>
-        </div>
-    </li>
+## ✘ Descrição do Projeto
+O projeto é uma lista de compras, onde os dados são armazenados no localStorage. Existe as funcionalidades de adicionar, remover, alterar o nome dos itens que o usuário deseja comprar e selecionar os itens que já foram comprados.
 
-Código modelo da li "Lista de compras": 
+## ✘ Acesso ao Projeto
+Você pode acessar o projeto, por meio do link: </br>
 
-    <li class="item-compra is-flex is-justify-content-space-between" data-value="">
-        <div>
-            <input type="checkbox" class="is-clickable" />
-            <input type="text" class="is-size-5" value=""></input>
-        </div>
-        <div>
-            <i class="fa-solid fa-trash is-clickable deletar"></i>
-        </div>
-    </li>
+## ✘ Tecnologias utilizadas
+* JavaScript
+* HTML
+* CSS
 
-Input com código refatorado:
+## ✘ Direitos autorais
+Os desenhos dessa página foram feitos por mim.
 
-    <div>
-        <input type="checkbox" checked class="is-clickable" />  
-        <span class="itens-comprados is-size-5">${elemento.valor}</span>
-    </div>
-
-Ícones de edição:
-
-    <i class="fa-regular fa-floppy-disk is-clickable"></i><i class="fa-regular is-clickable fa-pen-to-square editar"></i>
+## ✘ Pessoas Desenvolvedoras do Projeto 
+| [<img src="https://avatars.githubusercontent.com/u/115855530?v=4" width=115><br><sub>Ana Giulia Santos</sub>](https://github.com/anagiulias)
+| :---: |
