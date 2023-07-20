@@ -9,6 +9,7 @@ O projeto é uma lista de compras, onde os dados são armazenados no localStorag
 
 ## Acesso ao Projeto
 Você pode acessar o projeto, por meio do link: </br>
+https://anagiulias.github.io/Lista_De_Compras/
 
 ## Tecnologias utilizadas
 * JavaScript
