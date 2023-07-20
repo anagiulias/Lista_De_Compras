@@ -1,8 +1,3 @@
-//Array []
-//Objeto {dados}
-// = atribuição == comparação === valor e tipo de dado
-// splice: deleta, substitui e adiciona novos
-
 let listaDeItens = []
 let itemAEditar
 
@@ -15,8 +10,6 @@ const listaRecuperada = localStorage.getItem('listaDeItens')
 function autalizaLocalStorage() {
     localStorage.setItem('listaDeItens', JSON.stringify(listaDeItens))
 }
-
-// (valores omitidos, 0, null, NaN, undefined, "", false) << retornam false
 
 if(listaRecuperada) {
     listaDeItens = JSON.parse(listaRecuperada)
@@ -65,16 +58,16 @@ function mostrarItem(){
             `
         } else {
         ulItens.innerHTML += `
-    <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
-        <div>
-            <input type="checkbox" class="is-clickable" />
-            <input type="text" class="is-size-5" value="${elemento.valor}" ${index !== Number(itemAEditar) ? 'disabled' : ''}></input>
-        </div>
-        <div>
-            ${ index === Number(itemAEditar) ? '<button onclick="salvarEdicao()"><i class="fa-regular fa-floppy-disk is-clickable"></i></button>' : '<i class="fa-regular is-clickable fa-pen-to-square editar"></i>'}
-            <i class="fa-solid fa-trash is-clickable deletar"></i>
-        </div>
-    </li>
+        <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
+            <div>
+                <input type="checkbox" class="is-clickable" />
+                <input type="text" class="is-size-5" value="${elemento.valor}" ${index !== Number(itemAEditar) ? 'disabled' : ''}></input>
+            </div>
+            <div>
+                ${ index === Number(itemAEditar) ? '<button onclick="salvarEdicao()"><i class="fa-regular fa-floppy-disk is-clickable"></i></button>' : '<i class="fa-regular is-clickable fa-pen-to-square editar"></i>'}
+                <i class="fa-solid fa-trash is-clickable deletar"></i>
+            </div>
+        </li>
         `
         }
     })
@@ -110,7 +103,6 @@ function mostrarItem(){
 
 function salvarEdicao() {
     const itemEditado = document.querySelector(`[data-value="${itemAEditar}"] input[type="text"]`)
-    //console.log(itemEditado.value)
     listaDeItens[itemAEditar].valor = itemEditado.value
     console.log(listaDeItens)
     itemAEditar = -1

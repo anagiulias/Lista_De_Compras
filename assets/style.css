@@ -8,6 +8,24 @@ body {
     font-family: 'Montserrat', 'sans-serif', 'Coming Soon', cursive;
 }
 
+.cabecalho {
+    background-color: #f2f0f3dc;
+    box-shadow: #154580;
+}
+
+.cabecalho-itens {
+    display: flex;
+    padding: 1.5rem 6rem;
+}
+
+.cabecalho-nome {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 h2, footer {
     font-family: 'Coming Soon';
 }
